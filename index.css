@@ -9,27 +9,85 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/bg6-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .app{
+    padding: 7px;
+    box-shadow: 0px 0px 5px white inset;
+    border-radius: 7px;
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    animation: a 1s;
+  }
+
+  @keyframes a{
+    from{opacity: 0%;transform: translateY(30%);}
+    to{opacity: 100%;transform: translateY(0%);}
   }
   
   .head{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    text-align: center;
+    color:yellow;
+    text-shadow: 0px 0px 2px white;
   }
   .year{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 70px;
+  }
+  .year b{
+    color: transparent;
+    background-image: linear-gradient(to right, yellow,aqua);
+    background-clip: text;
     text-align: center;
+    width: fit-content;
   }
   .wish{
     font-family: 'Courier New', Courier, monospace;
     margin: 10px 0px;
-    text-align: center;
+    font-size: 27px;
+    color: aqua;
   }
   .from{
     text-align: right;
+    color: white;
+  }
+  .from b{
+    color: yellow;
   }
   .from .nam{
     font-family: cursive;
     font-size: larger;
+  }
+  label{
+    color: white;
+  }
+  input{
+    border-radius: 5px;
+    border: none;
+    height: 27px;
+    padding: 3px;
+    outline-color: aqua;
+  }
+  .btnWish{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: yellow;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .btnWish:hover{
+    font-size: 15px;
+  }
+  .btnWish:active{
+    font-size: 0px;
   }
