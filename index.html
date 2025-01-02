@@ -17,9 +17,9 @@
         <br>
         <div class="inputBox">
           <label>Enter your name</label><br>
-          <input id="nam" type="text"><br><br>
+          <input id="nam" onkeyup="getNormal(document.getElementById('nam'))" type="text"><br><br>
          <label>Enter your friend's name</label><br>
-         <input id="nam2" type="text"><br><br>
+         <input id="nam2" onkeyup="getNormal(document.getElementById('nam2'))" type="text"><br><br>
          <button onclick="wish()" class="btnWish">Wish</button>
         </div>
       </div>
