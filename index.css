@@ -4,15 +4,10 @@
     margin: 0;
   }
   body{
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url('/bg6-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-attachment: fixed;
   }
 
   .app{
@@ -24,6 +19,8 @@
     width: 400px;
     max-width: 90%;
     animation: a 1s;
+    margin: auto;
+    margin-top: 20px;
   }
 
   @keyframes a{
@@ -65,6 +62,9 @@
     font-family: cursive;
     font-size: larger;
   }
+  .inputBox{
+    display: none;
+  }
   label{
     color: white;
   }
@@ -93,4 +93,22 @@
   }
   .btnWish:active{
     font-size: 0px;
+  }
+  .reset{
+    background-color: orange;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .3s;
+  }
+  .reset:active{
+    transform: scale(.7);
+  }
+  .share button{
+    padding: 7px;
+    background-color:rgb(28, 89, 255);
+    border: none;
+    border-radius: 4px;
+    color: white;
   }

@@ -15,12 +15,16 @@
         </p>
         <p class="from"></p>
         <br>
-        <div class="inputBox">
+        <form class="inputBox" id="form">
           <label>Enter your name</label><br>
           <input id="nam" onkeyup="getNormal(document.getElementById('nam'))" type="text"><br><br>
          <label>Enter your friend's name</label><br>
          <input id="nam2" onkeyup="getNormal(document.getElementById('nam2'))" type="text"><br><br>
-         <button onclick="wish()" class="btnWish">Wish</button>
+         <button type="submit" class="btnWish">Wish</button>
+         <button class="reset" type="reset">&#8635;</button>
+        </form>
+        <div class="share">
+           <button onclick="share()">Share to friend</button>
         </div>
       </div>
       <script src="index.js"></script>
